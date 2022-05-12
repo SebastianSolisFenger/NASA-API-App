@@ -47,7 +47,6 @@ header {
 
 .imgcontainer img {
   width: 100%;
-  /* min-width: 300px; */
   height: 250px;
   margin-bottom: 5%;
   transition: var(--transition);
@@ -111,7 +110,6 @@ a {
   background-color: var(--bg-fill);
   border-radius: 10px;
   transition: var(--transition);
-  border-radius: 3px;
 }
 
 .cardContainer .title {
