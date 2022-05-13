@@ -8,14 +8,14 @@ function countElements(elem) {
 // HERE
 
 function countComments() {
-  const commentCount = document.querySelector("#comment-link");
+  const commentCount = document.querySelector("#ul-comment-dynamic-link");
   commentCount.previousElementSibling.innerHTML = `Comments ${countElements(
     commentCount
   )}`;
 }
 
 function showComment(user, str) {
-  const ulCont = document.querySelector("#comment-link");
+  const ulCont = document.querySelector("#ul-comment-dynamic-link");
   const li = document.createElement("li");
   li.innerHTML = `${user} : ${str}`;
   ulCont.appendChild(li);

@@ -323,7 +323,7 @@ textarea {
   font-weight: 500;
 }
 
-#comment-link li {
+#ul-comment-dynamic-link li {
   color: var(--white-color);
   padding: 5px;
 }

@@ -18,7 +18,7 @@ function displayPopup(img, title, description, id) {
      <p class="description">${description}</p>
      <div>
          <h2 class="comments">Comments</h2>
-         <ul id="comment-link">
+         <ul id="ul-comment-dynamic-link">
          </ul>
        </div>
        <form id="${id}form" action="post">
