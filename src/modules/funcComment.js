@@ -7,7 +7,7 @@ function countElements(elem) {
 
 // HERE
 
-function countComments() {
+function commentsCounter() {
   const commentCount = document.querySelector("#ul-comment-dynamic-link");
   commentCount.previousElementSibling.innerHTML = `Comments ${countElements(
     commentCount
@@ -27,8 +27,8 @@ function displayComments(id) {
     .then((data) =>
       data.forEach((elem) => showComment(elem.username, elem.comment))
     )
-    .then(() => countComments())
-    .catch(() => showComment("no", "comments yet"));
+    .then(() => commentsCounter())
+    .catch(() => showComment("There're no", "comments yet!"));
 }
 
 function addComment(id, user, str) {
@@ -43,12 +43,12 @@ function addComment(id, user, str) {
         showComment(user, str);
       }
     })
-    .catch(() => showComment("no", "comments yet"));
+    .catch(() => showComment("There're no", "comments yet!"));
 }
 
 export {
   countElements,
-  countComments,
+  commentsCounter,
   showComment,
   displayComments,
   addComment,
