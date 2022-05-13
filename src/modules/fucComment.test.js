@@ -1,17 +1,17 @@
 import { JSDOM } from "jsdom";
 import { countElements } from "./funcComment.js";
 
-const dom = new JSDOM(
+const globalDom = new JSDOM(
   '<!DOCTYPE html><body><ul id="addList" class="flcol"></body>'
 );
 
-global.document = dom.window.document;
-global.window = dom.window;
+global.document = globalDom.window.document;
+global.window = globalDom.window;
 
-const ul = document.getElementById("addList");
+const ulCon = document.getElementById("addList");
 
-test("test count of elements", () => {
+test("checking right amount of elements", () => {
   const li = document.createElement("li");
-  ul.appendChild(li);
-  expect(countElements(ul)).toBe(1);
+  ulCon.appendChild(li);
+  expect(countElements(ulCon)).toBe(1);
 });

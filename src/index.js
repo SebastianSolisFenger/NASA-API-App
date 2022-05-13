@@ -4,9 +4,13 @@ import {
   displayComments,
   addComment,
 } from "./modules/funcComment.js";
-import { getLink, getDataDateImage, starLink } from "./modules/API-links.js";
+import { getNasaApi, getDataDateImage, likeLink } from "./modules/API-links.js";
 import { getScores, postScores } from "./modules/get-post-data.js";
-import { closePopup, displayPopup, main } from "./modules/pop-up.js";
+import {
+  closePopup,
+  displayPopup,
+  containerDynamicCards,
+} from "./modules/pop-up.js";
 
 function addCard(img, title, index) {
   const div = document.createElement("div");
@@ -22,7 +26,7 @@ function addCard(img, title, index) {
         <small class='small-class'></small>
         <input type="button" value="Comments" id="${index}" class="comment">
         `;
-  main.appendChild(div);
+  containerDynamicCards.appendChild(div);
 }
 
 // HERE DISPLAYS THE DATA DESCRIPTION
@@ -36,7 +40,7 @@ function displayImage(id) {
         closePopup(closeBtn);
       });
     })
-    .catch((err) => console.log(err));
+    .catch((error) => console.log(error));
 }
 
 const deployLikes = (id, likes) => {
@@ -45,19 +49,19 @@ const deployLikes = (id, likes) => {
 };
 
 function displayStars() {
-  getScores(starLink)
+  getScores(likeLink)
     .then((data) =>
       data.forEach((elem, i) => {
-        if (i < countElements(main)) {
+        if (i < countElements(containerDynamicCards)) {
           deployLikes(elem.item_id, elem.likes);
         }
       })
     )
-    .catch((err) => console.log(err));
+    .catch((error) => console.log(error));
 }
 
 function displayScores() {
-  getScores(getLink)
+  getScores(getNasaApi)
     .then((data) =>
       data.forEach((elem, index) => addCard(elem.hdurl, elem.title, index))
     )
@@ -65,23 +69,23 @@ function displayScores() {
       displayStars();
       countItems();
     })
-    .catch((err) => console.log(err));
+    .catch((error) => console.log(error));
 }
 
 function likeIt(id, stars) {
   const data = { item_id: id };
-  postScores(starLink, data)
+  postScores(likeLink, data)
     .then((data) => {
       if (data.status === 201) {
         deployLikes(id, stars);
       }
     })
-    .catch((err) => console.log(err));
+    .catch((error) => console.log(error));
 }
 
 displayScores();
 
-main.addEventListener("click", (e) => {
+containerDynamicCards.addEventListener("click", (e) => {
   if (e.target.classList.contains("fa-heart")) {
     e.preventDefault();
     const sC = parseInt(

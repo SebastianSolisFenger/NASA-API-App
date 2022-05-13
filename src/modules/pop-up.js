@@ -2,7 +2,7 @@ function closePopup(target) {
   target.parentElement.parentElement.parentElement.remove();
 }
 
-const main = document.getElementById("addDynamicCards");
+const containerDynamicCards = document.getElementById("addDynamicCards");
 
 function displayPopup(img, title, description, id) {
   const popupDiv = document.createElement("div");
@@ -28,7 +28,7 @@ function displayPopup(img, title, description, id) {
        </form>
      </div>
      </div>`;
-  main.appendChild(popupDiv);
+  containerDynamicCards.appendChild(popupDiv);
 }
 
-export { closePopup, displayPopup, main };
+export { closePopup, displayPopup, containerDynamicCards };
