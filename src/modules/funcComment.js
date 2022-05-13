@@ -1,5 +1,5 @@
-import { getScores, postScores } from "./get-post-data.js";
-import { commentLink } from "./API-links.js";
+import { getData, postData } from "./get-post-data.js";
+import { commentLinks } from "./API-links.js";
 
 function countElements(elem) {
   return elem.childElementCount;
@@ -23,7 +23,7 @@ function showComment(user, str) {
 
 function displayComments(id) {
   const showProper = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/rS93TYMaWFRcDHR1Rs9u/comments?item_id=${id}`;
-  getScores(showProper)
+  getData(showProper)
     .then((data) =>
       data.forEach((elem) => showComment(elem.username, elem.comment))
     )
@@ -37,7 +37,7 @@ function addComment(id, user, str) {
     username: user,
     comment: str,
   };
-  postScores(commentLink, data)
+  postData(commentLinks, data)
     .then((data) => {
       if (data.status === 201) {
         showComment(user, str);

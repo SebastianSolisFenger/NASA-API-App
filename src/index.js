@@ -5,7 +5,7 @@ import {
   addComment,
 } from "./modules/funcComment.js";
 import { getNasaApi, getDataDateImage, likeLink } from "./modules/API-links.js";
-import { getScores, postScores } from "./modules/get-post-data.js";
+import { getData, postData } from "./modules/get-post-data.js";
 import {
   closePopup,
   displayPopup,
@@ -31,7 +31,7 @@ function addCard(img, title, index) {
 
 // HERE DISPLAYS THE DATA DESCRIPTION
 function displayImage(id) {
-  getScores(getDataDateImage(id))
+  getData(getDataDateImage(id))
     .then((data) => displayPopup(data.hdurl, data.title, data.explanation, id))
     .then(() => {
       displayComments(id);
@@ -49,7 +49,7 @@ const deployLikes = (id, likes) => {
 };
 
 function displayStars() {
-  getScores(likeLink)
+  getData(likeLink)
     .then((data) =>
       data.forEach((elem, i) => {
         if (i < countElements(containerDynamicCards)) {
@@ -61,7 +61,7 @@ function displayStars() {
 }
 
 function displayScores() {
-  getScores(getNasaApi)
+  getData(getNasaApi)
     .then((data) =>
       data.forEach((elem, index) => addCard(elem.hdurl, elem.title, index))
     )
@@ -74,7 +74,7 @@ function displayScores() {
 
 function likeIt(id, stars) {
   const data = { item_id: id };
-  postScores(likeLink, data)
+  postData(likeLink, data)
     .then((data) => {
       if (data.status === 201) {
         deployLikes(id, stars);
