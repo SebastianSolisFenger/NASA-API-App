@@ -48,7 +48,7 @@ const deployLikes = (id, likes) => {
   small.parentElement.nextElementSibling.innerHTML = `${likes} likes`;
 };
 
-function displayStars() {
+function displayLikes() {
   getData(likeLink)
     .then((data) =>
       data.forEach((elem, i) => {
@@ -66,18 +66,18 @@ function displayScores() {
       data.forEach((elem, index) => addCard(elem.hdurl, elem.title, index))
     )
     .then(() => {
-      displayStars();
+      displayLikes();
       countItems();
     })
     .catch((error) => console.log(error));
 }
 
-function likeIt(id, stars) {
+function likeIt(id, likes) {
   const data = { item_id: id };
   postData(likeLink, data)
     .then((data) => {
       if (data.status === 201) {
-        deployLikes(id, stars);
+        deployLikes(id, likes);
       }
     })
     .catch((error) => console.log(error));
@@ -92,8 +92,8 @@ containerDynamicCards.addEventListener("click", (e) => {
       e.target.parentElement.parentElement.nextElementSibling.textContent,
       10
     );
-    const stars = sC + 1;
-    likeIt(e.target.parentElement.id, stars);
+    const likes = sC + 1;
+    likeIt(e.target.parentElement.id, likes);
   }
   if (e.target.classList.contains("comment")) {
     displayImage(parseInt(e.target.id, 10));
