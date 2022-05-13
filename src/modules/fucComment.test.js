@@ -2,7 +2,7 @@ import { JSDOM } from "jsdom";
 import { countElements } from "./funcComment.js";
 
 const globalDom = new JSDOM(
-  '<!DOCTYPE html><body><ul id="addList" class="flcol"></body>'
+  '<!DOCTYPE html><body><ul id="addList" class="ulconmock"></body>'
 );
 
 global.document = globalDom.window.document;

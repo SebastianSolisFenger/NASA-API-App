@@ -269,6 +269,7 @@ footer {
   background-color: rgba(20, 17, 17, 1);
   margin: 24px auto;
   row-gap: 15px;
+  border-radius: 10px;
 }
 
 .header-popup {
