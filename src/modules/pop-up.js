@@ -1,10 +1,10 @@
-function closePopup(target) {
+function closeWindowPopup(target) {
   target.parentElement.parentElement.parentElement.remove();
 }
 
 const containerDynamicCards = document.getElementById("addDynamicCards");
 
-function displayPopup(img, title, description, id) {
+function displayWindowPopup(img, title, description, id) {
   const popupDiv = document.createElement("div");
   popupDiv.classList.add("popupWindow");
   popupDiv.innerHTML = `
@@ -31,4 +31,4 @@ function displayPopup(img, title, description, id) {
   containerDynamicCards.appendChild(popupDiv);
 }
 
-export { closePopup, displayPopup, containerDynamicCards };
+export { closeWindowPopup, displayWindowPopup, containerDynamicCards };

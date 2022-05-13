@@ -7,8 +7,8 @@ import {
 import { getNasaApi, getDataDateImage, likeLink } from "./modules/API-links.js";
 import { getData, postData } from "./modules/get-post-data.js";
 import {
-  closePopup,
-  displayPopup,
+  closeWindowPopup,
+  displayWindowPopup,
   containerDynamicCards,
 } from "./modules/pop-up.js";
 
@@ -32,12 +32,14 @@ function addCard(img, title, index) {
 // HERE DISPLAYS THE DATA DESCRIPTION
 function displayImage(id) {
   getData(getDataDateImage(id))
-    .then((data) => displayPopup(data.hdurl, data.title, data.explanation, id))
+    .then((data) =>
+      displayWindowPopup(data.hdurl, data.title, data.explanation, id)
+    )
     .then(() => {
       displayComments(id);
       const closeBtn = document.getElementById("close");
       closeBtn.addEventListener("click", () => {
-        closePopup(closeBtn);
+        closeWindowPopup(closeBtn);
       });
     })
     .catch((error) => console.log(error));
