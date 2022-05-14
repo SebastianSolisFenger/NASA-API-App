@@ -2,7 +2,7 @@ import "./style.css";
 import {
   countingElementsFunc,
   showComments,
-  addComment,
+  postComment,
 } from "./modules/funcComment.js";
 import { getNasaApi, getDataDateImage, likeLink } from "./modules/API-links.js";
 import { getData, postData } from "./modules/get-post-data.js";
@@ -12,101 +12,102 @@ import {
   containerDynamicCards,
 } from "./modules/pop-up.js";
 
-function addCard(img, title, index) {
-  const div = document.createElement("div");
-  div.classList.add("cardContainer");
-  div.innerHTML = `
+function addFirstInterfaceCard(image, titleCard, indexCard) {
+  const card = document.createElement("div");
+  card.classList.add("cardContainer");
+  card.innerHTML = `
         <div class="imgCardcontainer">
-          <img src="${img}" alt="Image provided by Nasa's Api">
+          <img src="${image}" alt="Image provided by Nasa's Api">
         </div>
         <div class="title">
-          <h3>${title}</h3>
-          <a href="#" id="${index}star" class="like"><i class="fas fa-heart"></i></a>
+          <h3>${titleCard}</h3>
+          <a href="#" id="${indexCard}star" class="like"><i class="fas fa-heart"></i></a>
         </div>
         <small class='small-class'></small>
-        <input type="button" value="Comments" id="${index}" class="comment">
+        <input type="button" value="Comments" id="${indexCard}" class="comment">
         `;
-  containerDynamicCards.appendChild(div);
+  containerDynamicCards.appendChild(card);
 }
 
-// HERE DISPLAYS THE DATA DESCRIPTION
-function displayImage(id) {
-  getData(getDataDateImage(id))
+function displayImage(idImg) {
+  getData(getDataDateImage(idImg))
     .then((data) =>
-      displayWindowPopup(data.hdurl, data.title, data.explanation, id)
+      displayWindowPopup(data.hdurl, data.title, data.explanation, idImg)
     )
     .then(() => {
-      showComments(id);
-      const closeBtn = document.getElementById("closePopUp");
-      closeBtn.addEventListener("click", () => {
-        closeWindowPopup(closeBtn);
+      showComments(idImg);
+      const closePopUpBtn = document.getElementById("closePopUp");
+      closePopUpBtn.addEventListener("click", () => {
+        closeWindowPopup(closePopUpBtn);
       });
     })
     .catch((error) => console.log(error));
 }
 
-const deployLikes = (id, likes) => {
-  const small = document.getElementById(id);
+const sendLikesDom = (idLike, likes) => {
+  const small = document.getElementById(idLike);
   small.parentElement.nextElementSibling.innerHTML = `${likes} likes`;
 };
 
-function displayLikes() {
+function showFuncLikes() {
   getData(likeLink)
     .then((data) =>
-      data.forEach((elem, i) => {
-        if (i < countingElementsFunc(containerDynamicCards)) {
-          deployLikes(elem.item_id, elem.likes);
+      data.forEach((card, index) => {
+        if (index < countingElementsFunc(containerDynamicCards)) {
+          sendLikesDom(card.item_id, card.likes);
         }
       })
     )
     .catch((error) => console.log(error));
 }
 
-function displayScores() {
+function showAmoutOfLikes() {
   getData(getNasaApi)
     .then((data) =>
-      data.forEach((elem, index) => addCard(elem.hdurl, elem.title, index))
+      data.forEach((card, index) =>
+        addFirstInterfaceCard(card.hdurl, card.title, index)
+      )
     )
     .then(() => {
-      displayLikes();
+      showFuncLikes();
       countItems();
     })
     .catch((error) => console.log(error));
 }
 
-function likeIt(id, likes) {
-  const data = { item_id: id };
+function rawFunclike(idLike, likes) {
+  const data = { item_id: idLike };
   postData(likeLink, data)
     .then((data) => {
       if (data.status === 201) {
-        deployLikes(id, likes);
+        sendLikesDom(idLike, likes);
       }
     })
     .catch((error) => console.log(error));
 }
 
-displayScores();
+showAmoutOfLikes();
 
 containerDynamicCards.addEventListener("click", (e) => {
   if (e.target.classList.contains("fa-heart")) {
     e.preventDefault();
-    const sC = parseInt(
+    const likeCounter = parseInt(
       e.target.parentElement.parentElement.nextElementSibling.textContent,
       10
     );
-    const likes = sC + 1;
-    likeIt(e.target.parentElement.id, likes);
+    const likes = likeCounter + 1;
+    rawFunclike(e.target.parentElement.id, likes);
   }
   if (e.target.classList.contains("comment")) {
     displayImage(parseInt(e.target.id, 10));
   }
   if (e.target.id === "popupComment") {
     e.preventDefault();
-    const id = e.target.parentElement.id.match(/[0-9]/g);
+    const idComment = e.target.parentElement.id.match(/[0-9]/g);
     const userName = document.getElementById("userName");
-    const comment = document.getElementById("comment-box-id");
-    addComment(id, userName.value, comment.value);
+    const commentDom = document.getElementById("comment-box-id");
+    postComment(idComment, userName.value, commentDom.value);
     userName.value = "";
-    comment.value = "";
+    commentDom.value = "";
   }
 });

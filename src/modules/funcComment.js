@@ -33,7 +33,7 @@ function showComments(id) {
     .catch(() => structureFuncComment("There're no", "comments yet!"));
 }
 
-function addComment(idComment, userName, commentTextStr) {
+function postComment(idComment, userName, commentTextStr) {
   const dataComment = {
     item_id: idComment,
     username: userName,
@@ -53,5 +53,5 @@ export {
   commentsFuncCounting,
   structureFuncComment,
   showComments,
-  addComment,
+  postComment,
 };
