@@ -6,17 +6,19 @@ function countingElementsFunc(elem) {
 }
 
 function commentsFuncCounting() {
-  const commentCount = document.querySelector("#ul-comment-dynamic-link");
-  commentCount.previousElementSibling.innerHTML = `Comments ${countingElementsFunc(
-    commentCount
+  const commentContainerCount = document.querySelector(
+    "#ul-comment-dynamic-link"
+  );
+  commentContainerCount.previousElementSibling.innerHTML = `Comments ${countingElementsFunc(
+    commentContainerCount
   )}`;
 }
 
-function showComment(user, str) {
-  const ulCont = document.querySelector("#ul-comment-dynamic-link");
+function showComment(userName, textCommentStr) {
+  const ulDynamicCont = document.querySelector("#ul-comment-dynamic-link");
   const li = document.createElement("li");
-  li.innerHTML = `${user} : ${str}`;
-  ulCont.appendChild(li);
+  li.innerHTML = `${userName} : ${textCommentStr}`;
+  ulDynamicCont.appendChild(li);
 }
 
 function displayComments(id) {
