@@ -226,7 +226,7 @@ input[type="button"] {
 
 input[type="button"]:hover {
   transform: var(--scale);
-  color: var(--white-color);
+  color: white;
   background-color: rgba(0, 0, 0, 0.75);
 }
 
@@ -241,7 +241,7 @@ footer {
 
 .popupGrandContainer h2,
 .descriptionPopup {
-  color: var(--white-color);
+  color: white;
   padding: 32px;
   text-align: center;
 }
@@ -332,10 +332,11 @@ textarea {
   margin: 0 auto;
   line-height: 20px;
   font-weight: 500;
+  color: white;
 }
 
 #ul-comment-dynamic-link li {
-  color: var(--white-color);
+  color: white;
   padding: 5px;
 }
 
