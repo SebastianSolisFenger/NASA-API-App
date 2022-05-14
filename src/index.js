@@ -12,7 +12,7 @@ import {
   containerDynamicCards,
 } from "./modules/pop-up.js";
 
-function addFirstInterfaceCard(image, titleCard, indexCard) {
+const addFirstInterfaceCard = (image, titleCard, indexCard) => {
   const card = document.createElement("div");
   card.classList.add("cardContainer");
   card.innerHTML = `
@@ -27,9 +27,9 @@ function addFirstInterfaceCard(image, titleCard, indexCard) {
         <input type="button" value="Comments" id="${indexCard}" class="comment">
         `;
   containerDynamicCards.appendChild(card);
-}
+};
 
-function displayImage(idImg) {
+const displayImage = (idImg) => {
   getData(getDataDateImage(idImg))
     .then((data) =>
       displayWindowPopup(data.hdurl, data.title, data.explanation, idImg)
@@ -42,14 +42,14 @@ function displayImage(idImg) {
       });
     })
     .catch((error) => console.log(error));
-}
+};
 
 const sendLikesDom = (idLike, likes) => {
   const small = document.getElementById(idLike);
   small.parentElement.nextElementSibling.innerHTML = `${likes} likes`;
 };
 
-function showFuncLikes() {
+const showFuncLikes = () => {
   getData(likeLink)
     .then((data) =>
       data.forEach((card, index) => {
@@ -59,9 +59,9 @@ function showFuncLikes() {
       })
     )
     .catch((error) => console.log(error));
-}
+};
 
-function showAmoutOfLikes() {
+const showAmoutOfLikes = () => {
   getData(getNasaApi)
     .then((data) =>
       data.forEach((card, index) =>
@@ -73,9 +73,9 @@ function showAmoutOfLikes() {
       countItems();
     })
     .catch((error) => console.log(error));
-}
+};
 
-function rawFunclike(idLike, likes) {
+const rawFunclike = (idLike, likes) => {
   const data = { item_id: idLike };
   postData(likeLink, data)
     .then((data) => {
@@ -84,7 +84,7 @@ function rawFunclike(idLike, likes) {
       }
     })
     .catch((error) => console.log(error));
-}
+};
 
 showAmoutOfLikes();
 
