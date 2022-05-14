@@ -2,11 +2,11 @@ function closeWindowPopup(IDtarget) {
   IDtarget.parentElement.parentElement.parentElement.remove();
 }
 
-const containerDynamicCards = document.getElementById("addDynamicCards");
+const containerDynamicCards = document.getElementById('addDynamicCards');
 
 function displayWindowPopup(image, title, infoDescrip, windowsId) {
-  const popupWindowContainer = document.createElement("div");
-  popupWindowContainer.classList.add("popupWindowClass");
+  const popupWindowContainer = document.createElement('div');
+  popupWindowContainer.classList.add('popupWindowClass');
   popupWindowContainer.innerHTML = `
     <div class="popupGrandContainer">
      <span><i class="fas fa-times" id="closePopUp"></i>
