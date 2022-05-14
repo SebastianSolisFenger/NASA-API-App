@@ -1,6 +1,6 @@
 import "./style.css";
 import {
-  countElements,
+  countingElementsFunc,
   displayComments,
   addComment,
 } from "./modules/funcComment.js";
@@ -54,7 +54,7 @@ function displayLikes() {
   getData(likeLink)
     .then((data) =>
       data.forEach((elem, i) => {
-        if (i < countElements(containerDynamicCards)) {
+        if (i < countingElementsFunc(containerDynamicCards)) {
           deployLikes(elem.item_id, elem.likes);
         }
       })

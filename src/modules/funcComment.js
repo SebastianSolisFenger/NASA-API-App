@@ -1,7 +1,7 @@
 import { getData, postData } from "./get-post-data.js";
 import { commentLinks } from "./API-links.js";
 
-function countElements(elem) {
+function countingElementsFunc(elem) {
   return elem.childElementCount;
 }
 
@@ -9,7 +9,7 @@ function countElements(elem) {
 
 function commentsCounter() {
   const commentCount = document.querySelector("#ul-comment-dynamic-link");
-  commentCount.previousElementSibling.innerHTML = `Comments ${countElements(
+  commentCount.previousElementSibling.innerHTML = `Comments ${countingElementsFunc(
     commentCount
   )}`;
 }
@@ -47,7 +47,7 @@ function addComment(id, user, str) {
 }
 
 export {
-  countElements,
+  countingElementsFunc,
   commentsCounter,
   showComment,
   displayComments,
