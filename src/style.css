@@ -18,9 +18,13 @@
 }
 
 body {
-  background-image: url(/src/images/bgimg1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url(/src/images/papers.co-ni77-space-star-night-galaxy-nature-dark-milkyway-3840x2400.jpg);
+  background-repeat: repeat;
+  background-size: contain;
+}
+
+.light-house-avoid-error {
+  display: none;
 }
 
 header {

@@ -5,9 +5,7 @@ function countingElementsFunc(elem) {
   return elem.childElementCount;
 }
 
-// HERE
-
-function commentsCounter() {
+function commentsFuncCounting() {
   const commentCount = document.querySelector("#ul-comment-dynamic-link");
   commentCount.previousElementSibling.innerHTML = `Comments ${countingElementsFunc(
     commentCount
@@ -27,7 +25,7 @@ function displayComments(id) {
     .then((data) =>
       data.forEach((elem) => showComment(elem.username, elem.comment))
     )
-    .then(() => commentsCounter())
+    .then(() => commentsFuncCounting())
     .catch(() => showComment("There're no", "comments yet!"));
 }
 
@@ -48,7 +46,7 @@ function addComment(id, user, str) {
 
 export {
   countingElementsFunc,
-  commentsCounter,
+  commentsFuncCounting,
   showComment,
   displayComments,
   addComment,
