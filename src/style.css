@@ -122,8 +122,8 @@ a {
 
 .cardContainer:before,
 .cardContainer:after,
-.popupContainer:before,
-.popupContainer:after {
+.popupGrandContainer:before,
+.popupGrandContainer:after {
   content: "";
   position: absolute;
   left: -2px;
@@ -159,7 +159,7 @@ a {
 }
 
 .cardContainer:after,
-.popupContainer:after {
+.popupGrandContainer:after {
   filter: blur(50px);
 }
 
@@ -231,8 +231,8 @@ footer {
   width: 100%;
 }
 
-.popupContainer h2,
-.description {
+.popupGrandContainer h2,
+.descriptionPopup {
   color: var(--white-color);
   padding: 30px;
   text-align: center;
@@ -247,7 +247,7 @@ footer {
 }
 
 /* popup styles */
-.popupWindow {
+.popupWindowClass {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -262,7 +262,7 @@ footer {
   background: rgba(0, 0, 0, 0.8);
 }
 
-.popupContainer {
+.popupGrandContainer {
   position: relative;
   width: 70%;
   border: 1px solid #fff;
@@ -276,30 +276,30 @@ footer {
   border-radius: 10px;
 }
 
-.header-popup {
+.header-img-container-popup {
   width: 60%;
   margin: 0 auto;
 }
 
-.popup-image {
+.popup-class-image {
   width: 100%;
   padding: 20px;
   border: 2px solid yellow;
 }
 
-.popupContainer span {
+.popupGrandContainer span {
   align-self: flex-end;
   padding: 20px;
 }
 
-#close {
+#closePopUp {
   color: var(--white-color);
   font-weight: var(--font-600);
   cursor: pointer;
   font-size: 25px;
 }
 
-.popupContainer form {
+.popupGrandContainer form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -320,7 +320,7 @@ textarea {
   padding: 10px;
 }
 
-.popupContainer p {
+.popupGrandContainer p {
   width: 80%;
   margin: 0 auto;
   line-height: 20px;

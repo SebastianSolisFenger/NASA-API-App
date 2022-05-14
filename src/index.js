@@ -37,7 +37,7 @@ function displayImage(id) {
     )
     .then(() => {
       showComments(id);
-      const closeBtn = document.getElementById("close");
+      const closeBtn = document.getElementById("closePopUp");
       closeBtn.addEventListener("click", () => {
         closeWindowPopup(closeBtn);
       });
