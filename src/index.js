@@ -1,7 +1,7 @@
 import "./style.css";
 import {
   countingElementsFunc,
-  displayComments,
+  showComments,
   addComment,
 } from "./modules/funcComment.js";
 import { getNasaApi, getDataDateImage, likeLink } from "./modules/API-links.js";
@@ -36,7 +36,7 @@ function displayImage(id) {
       displayWindowPopup(data.hdurl, data.title, data.explanation, id)
     )
     .then(() => {
-      displayComments(id);
+      showComments(id);
       const closeBtn = document.getElementById("close");
       closeBtn.addEventListener("click", () => {
         closeWindowPopup(closeBtn);

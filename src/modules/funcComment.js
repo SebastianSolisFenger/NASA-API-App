@@ -14,42 +14,44 @@ function commentsFuncCounting() {
   )}`;
 }
 
-function showComment(userName, textCommentStr) {
+function structureFuncComment(userName, textCommentStr) {
   const ulDynamicCont = document.querySelector("#ul-comment-dynamic-link");
-  const li = document.createElement("li");
-  li.innerHTML = `${userName} : ${textCommentStr}`;
-  ulDynamicCont.appendChild(li);
+  const LIST = document.createElement("li");
+  LIST.innerHTML = `${userName} : ${textCommentStr}`;
+  ulDynamicCont.appendChild(LIST);
 }
 
-function displayComments(id) {
-  const showProper = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/rS93TYMaWFRcDHR1Rs9u/comments?item_id=${id}`;
-  getData(showProper)
+function showComments(id) {
+  const apiLinkGetComments = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/rS93TYMaWFRcDHR1Rs9u/comments?item_id=${id}`;
+  getData(apiLinkGetComments)
     .then((data) =>
-      data.forEach((elem) => showComment(elem.username, elem.comment))
+      data.forEach((comment) =>
+        structureFuncComment(comment.username, comment.comment)
+      )
     )
     .then(() => commentsFuncCounting())
-    .catch(() => showComment("There're no", "comments yet!"));
+    .catch(() => structureFuncComment("There're no", "comments yet!"));
 }
 
-function addComment(id, user, str) {
-  const data = {
-    item_id: id,
-    username: user,
-    comment: str,
+function addComment(idComment, userName, commentTextStr) {
+  const dataComment = {
+    item_id: idComment,
+    username: userName,
+    comment: commentTextStr,
   };
-  postData(commentLinks, data)
+  postData(commentLinks, dataComment)
     .then((data) => {
       if (data.status === 201) {
-        showComment(user, str);
+        structureFuncComment(userName, commentTextStr);
       }
     })
-    .catch(() => showComment("There're no", "comments yet!"));
+    .catch(() => structureFuncComment("There're no", "comments yet!"));
 }
 
 export {
   countingElementsFunc,
   commentsFuncCounting,
-  showComment,
-  displayComments,
+  structureFuncComment,
+  showComments,
   addComment,
 };

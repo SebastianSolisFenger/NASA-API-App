@@ -1,7 +1,7 @@
 const getNasaApi =
   "https://api.nasa.gov/planetary/apod?api_key=yE5XwF3YBRu6RaMb2K328lXJabWCog5rzjaIR76N&start_date=2022-04-10&end_date=2022-04-21";
 
-const datesForPopup = [
+const randomDatesForPopupImgs = [
   "2022-04-10",
   "2022-04-11",
   "2022-04-12",
@@ -17,7 +17,7 @@ const datesForPopup = [
 ];
 
 const getDataDateImage = (num) =>
-  `https://api.nasa.gov/planetary/apod?api_key=yE5XwF3YBRu6RaMb2K328lXJabWCog5rzjaIR76N&date=${datesForPopup[num]}`;
+  `https://api.nasa.gov/planetary/apod?api_key=yE5XwF3YBRu6RaMb2K328lXJabWCog5rzjaIR76N&date=${randomDatesForPopupImgs[num]}`;
 
 const likeLink =
   "https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/rS93TYMaWFRcDHR1Rs9u/likes";
