@@ -5,6 +5,14 @@ function countingElementsFunc(elem) {
   return elem.childElementCount;
 }
 
+function countingItems() {
+  const item = document.querySelector('#item-count');
+  const DynamicSection = document.querySelector('#addDynamicCards');
+  item.firstChild.innerHTML = `Black-Hole ${countingElementsFunc(
+    DynamicSection,
+  )}`;
+}
+
 function commentsFuncCounting() {
   const commentContainerCount = document.querySelector(
     '#ul-comment-dynamic-link',
@@ -48,6 +56,7 @@ function postComment(idComment, userName, commentTextStr) {
 export {
   countingElementsFunc,
   commentsFuncCounting,
+  countingItems,
   structureFuncComment,
   showComments,
   postComment,

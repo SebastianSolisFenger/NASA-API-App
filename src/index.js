@@ -2,6 +2,7 @@ import './style.css';
 import {
   countingElementsFunc,
   showComments,
+  countingItems,
   postComment,
 } from './modules/funcComment.js';
 import { getNasaApi, getDataDateImage, likeLink } from './modules/API-links.js';
@@ -63,6 +64,7 @@ const showAmoutOfLikes = () => {
     .then((data) => data.forEach((card, index) => addFirstInterfaceCard(card.hdurl, card.title, index)))
     .then(() => {
       showFuncLikes();
+      countingItems();
     })
     .catch((error) => console.log(error));
 };
