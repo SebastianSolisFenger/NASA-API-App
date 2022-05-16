@@ -16,7 +16,7 @@
   \*************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"/* @import url(\\\"https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap\\\"); */\\r\\n\\r\\n:root {\\r\\n  --back-blue: #4096e2;\\r\\n  --whiteProto: #fff;\\r\\n  --grayProto: #e2dfdf;\\r\\n  --gray-2Proto: #f6f6f6;\\r\\n  --gray-3Proto: #959595;\\r\\n  --blackProto: #000;\\r\\n  --black-2Proto: #bdbdbd;\\r\\n}\\r\\n\\r\\n* {\\r\\n  margin: 0;\\r\\n  padding: 0;\\r\\n  box-sizing: border-box;\\r\\n}\\r\\n\\r\\nbody {\\r\\n  font-family: \\\"Poppins\\\", sans-serif;\\r\\n  background: linear-gradient(to right, #6e48aa, #9d50bb);\\r\\n}\\r\\n\\r\\n.main-div {\\r\\n  display: flex;\\r\\n  justify-content: center;\\r\\n  align-items: center;\\r\\n  height: 100vh;\\r\\n}\\r\\n\\r\\n.todo-div {\\r\\n  width: 500px;\\r\\n  border-radius: 10px;\\r\\n  margin-left: 15px;\\r\\n  margin-right: 15px;\\r\\n  box-shadow: 10px 20px 8px rgb(0 0 0 / 45%);\\r\\n}\\r\\n\\r\\n.light-house-avoid-error {\\r\\n  display: none;\\r\\n}\\r\\n\\r\\n.entry-line {\\r\\n  display: flex;\\r\\n  background-color: var(--whiteProto);\\r\\n  padding: 5px 15px 5px 15px;\\r\\n  justify-content: space-between;\\r\\n  align-items: center;\\r\\n  border-bottom: 1.4px solid var(--grayProto);\\r\\n}\\r\\n\\r\\n.task-line-through {\\r\\n  text-decoration: line-through;\\r\\n}\\r\\n\\r\\n.title-list p {\\r\\n  font-size: 18px;\\r\\n}\\r\\n\\r\\n.entry-line p {\\r\\n  font-size: 15px;\\r\\n  font-family: \\\"Poppins\\\", sans-serif;\\r\\n  font-weight: 300;\\r\\n}\\r\\n\\r\\n.task-status:checked + p {\\r\\n  text-decoration: line-through;\\r\\n}\\r\\n\\r\\n.title-list {\\r\\n  border-radius: 10px 10px 2px 2px;\\r\\n}\\r\\n\\r\\n.inside-list-container {\\r\\n  display: flex;\\r\\n  align-items: center;\\r\\n  gap: 10px;\\r\\n}\\r\\n\\r\\n#add-task-form {\\r\\n  display: flex;\\r\\n  justify-content: space-between;\\r\\n  width: 100%;\\r\\n  gap: 25px;\\r\\n}\\r\\n\\r\\n.input-new-task {\\r\\n  width: 100%;\\r\\n  height: 38px;\\r\\n  border: none;\\r\\n  font-family: \\\"Poppins\\\", sans-serif;\\r\\n  font-weight: 300;\\r\\n  font-size: 16px;\\r\\n}\\r\\n\\r\\n.list-btn {\\r\\n  padding: 10px;\\r\\n  background-color: transparent;\\r\\n  border: none;\\r\\n  cursor: pointer;\\r\\n}\\r\\n\\r\\n.list-btn i {\\r\\n  font-size: 18px;\\r\\n  color: var(--gray-3Proto);\\r\\n}\\r\\n\\r\\n.clear-task-line {\\r\\n  justify-content: center;\\r\\n  height: 50px;\\r\\n  border-radius: 2px 2px 10px 10px;\\r\\n  cursor: pointer;\\r\\n}\\r\\n\\r\\n.clear-task-line button {\\r\\n  background-color: transparent;\\r\\n  border: none;\\r\\n  font-size: 16px;\\r\\n  font-family: \\\"Poppins\\\", sans-serif;\\r\\n  font-weight: 300;\\r\\n  cursor: pointer;\\r\\n}\\r\\n\\r\\n.task-description,\\r\\n.input-new-task {\\r\\n  outline: none;\\r\\n}\\r\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://webpack-config/./src/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);\n// Imports\n\n\n\nvar ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../../src/images/47879.jpg */ \"./src/images/47879.jpg\"), __webpack_require__.b);\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n___CSS_LOADER_EXPORT___.push([module.id, \"@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap);\"]);\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \":root {\\r\\n  --General-width: 90%;\\r\\n  --transition: all 0.2s linear;\\r\\n  --scale: scale(1.2);\\r\\n  --card-scale: scale(1.05);\\r\\n  --pop-600: 600;\\r\\n}\\r\\n\\r\\n* {\\r\\n  box-sizing: border-box;\\r\\n  list-style: none;\\r\\n  margin: 0;\\r\\n  padding: 0;\\r\\n  font-family: \\\"Poppins\\\", sans-serif;\\r\\n}\\r\\n\\r\\nbody {\\r\\n  background-image: url(\" + ___CSS_LOADER_URL_REPLACEMENT_0___ + \");\\r\\n  background-repeat: no-repeat;\\r\\n  background-size: cover;\\r\\n}\\r\\n\\r\\nheader {\\r\\n  width: 100%;\\r\\n  padding: 15px 12px;\\r\\n  display: flex;\\r\\n  justify-content: space-between;\\r\\n  align-items: center;\\r\\n  background-color: #5212c9;\\r\\n}\\r\\n\\r\\n.header-container {\\r\\n  width: var(--General-width);\\r\\n  margin: 0 auto;\\r\\n  display: flex;\\r\\n  justify-content: space-between;\\r\\n  align-items: center;\\r\\n}\\r\\n\\r\\n.imgCardcontainer {\\r\\n  min-height: 318px;\\r\\n  align-items: center;\\r\\n  justify-content: center;\\r\\n  display: flex;\\r\\n  overflow: hidden;\\r\\n}\\r\\n\\r\\n.imgCardcontainer img {\\r\\n  width: 148%;\\r\\n  height: 348px;\\r\\n  margin-bottom: 7%;\\r\\n  transition: var(--transition);\\r\\n}\\r\\n\\r\\n#addDynamicCards {\\r\\n  width: var(--General-width);\\r\\n  margin: 0 auto;\\r\\n  display: flex;\\r\\n  flex-wrap: wrap;\\r\\n  justify-content: space-between;\\r\\n  align-items: center;\\r\\n}\\r\\n\\r\\n.cardContainer {\\r\\n  width: 30%;\\r\\n  height: 600px;\\r\\n  display: flex;\\r\\n  flex-direction: column;\\r\\n  justify-content: center;\\r\\n  align-items: center;\\r\\n  margin: 5% 0;\\r\\n  padding: 18px 18px;\\r\\n  background-color: rgb(16, 16, 16, 0.5);\\r\\n  border-radius: 10px;\\r\\n  transition: var(--transition);\\r\\n  position: relative;\\r\\n}\\r\\n\\r\\n.cardContainer .title {\\r\\n  width: 100%;\\r\\n  display: flex;\\r\\n  justify-content: space-between;\\r\\n  align-items: center;\\r\\n  padding: 5px;\\r\\n  margin: 10% 0;\\r\\n  color: white;\\r\\n}\\r\\n\\r\\n.title h2 {\\r\\n  margin-right: 7px;\\r\\n}\\r\\n\\r\\n.title h3 {\\r\\n  margin-right: 7px;\\r\\n}\\r\\n\\r\\n.cardContainer:hover {\\r\\n  transform: var(--card-scale);\\r\\n}\\r\\n\\r\\n.logo img {\\r\\n  width: 80px;\\r\\n  transition: var(--transition);\\r\\n}\\r\\n\\r\\n.imgCardcontainer img:hover {\\r\\n  transform: var(--scale);\\r\\n}\\r\\n\\r\\n.logo img {\\r\\n  width: 80px;\\r\\n  transition: var(--transition);\\r\\n}\\r\\n\\r\\n.imgCardcontainer img:hover {\\r\\n  transform: var(--scale);\\r\\n}\\r\\n\\r\\n.logo img:hover {\\r\\n  transform: var(--scale);\\r\\n}\\r\\n\\r\\nnav {\\r\\n  width: 50%;\\r\\n}\\r\\n\\r\\nnav ul {\\r\\n  display: flex;\\r\\n  justify-content: space-between;\\r\\n  align-items: center;\\r\\n}\\r\\n\\r\\n.nav-link {\\r\\n  transition: var(--transition);\\r\\n}\\r\\n\\r\\n.nav-link:hover {\\r\\n  transform: var(--scale);\\r\\n}\\r\\n\\r\\na {\\r\\n  text-decoration: none;\\r\\n  color: white;\\r\\n  font-weight: var(--pop-600);\\r\\n}\\r\\n\\r\\nfooter {\\r\\n  background-color: #5212c9;\\r\\n  width: 100%;\\r\\n  display: flex;\\r\\n  justify-content: center;\\r\\n  color: white;\\r\\n  position: absolute;\\r\\n}\\r\\n\\r\\n#light-house-avoid-error {\\r\\n  display: none;\\r\\n}\\r\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://webpack-config/./src/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -27,6 +27,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((module) => {
 
 eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n  Author Tobias Koppers @sokra\n*/\nmodule.exports = function (cssWithMappingToString) {\n  var list = []; // return the list of modules as css string\n\n  list.toString = function toString() {\n    return this.map(function (item) {\n      var content = \"\";\n      var needLayer = typeof item[5] !== \"undefined\";\n\n      if (item[4]) {\n        content += \"@supports (\".concat(item[4], \") {\");\n      }\n\n      if (item[2]) {\n        content += \"@media \".concat(item[2], \" {\");\n      }\n\n      if (needLayer) {\n        content += \"@layer\".concat(item[5].length > 0 ? \" \".concat(item[5]) : \"\", \" {\");\n      }\n\n      content += cssWithMappingToString(item);\n\n      if (needLayer) {\n        content += \"}\";\n      }\n\n      if (item[2]) {\n        content += \"}\";\n      }\n\n      if (item[4]) {\n        content += \"}\";\n      }\n\n      return content;\n    }).join(\"\");\n  }; // import a list of modules into the list\n\n\n  list.i = function i(modules, media, dedupe, supports, layer) {\n    if (typeof modules === \"string\") {\n      modules = [[null, modules, undefined]];\n    }\n\n    var alreadyImportedModules = {};\n\n    if (dedupe) {\n      for (var k = 0; k < this.length; k++) {\n        var id = this[k][0];\n\n        if (id != null) {\n          alreadyImportedModules[id] = true;\n        }\n      }\n    }\n\n    for (var _k = 0; _k < modules.length; _k++) {\n      var item = [].concat(modules[_k]);\n\n      if (dedupe && alreadyImportedModules[item[0]]) {\n        continue;\n      }\n\n      if (typeof layer !== \"undefined\") {\n        if (typeof item[5] === \"undefined\") {\n          item[5] = layer;\n        } else {\n          item[1] = \"@layer\".concat(item[5].length > 0 ? \" \".concat(item[5]) : \"\", \" {\").concat(item[1], \"}\");\n          item[5] = layer;\n        }\n      }\n\n      if (media) {\n        if (!item[2]) {\n          item[2] = media;\n        } else {\n          item[1] = \"@media \".concat(item[2], \" {\").concat(item[1], \"}\");\n          item[2] = media;\n        }\n      }\n\n      if (supports) {\n        if (!item[4]) {\n          item[4] = \"\".concat(supports);\n        } else {\n          item[1] = \"@supports (\".concat(item[4], \") {\").concat(item[1], \"}\");\n          item[4] = supports;\n        }\n      }\n\n      list.push(item);\n    }\n  };\n\n  return list;\n};\n\n//# sourceURL=webpack://webpack-config/./node_modules/css-loader/dist/runtime/api.js?");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/***/ ((module) => {
+
+eval("\n\nmodule.exports = function (url, options) {\n  if (!options) {\n    options = {};\n  }\n\n  if (!url) {\n    return url;\n  }\n\n  url = String(url.__esModule ? url.default : url); // If url is already wrapped in quotes, remove them\n\n  if (/^['\"].*['\"]$/.test(url)) {\n    url = url.slice(1, -1);\n  }\n\n  if (options.hash) {\n    url += options.hash;\n  } // Should url be wrapped?\n  // See https://drafts.csswg.org/css-values-3/#urls\n\n\n  if (/[\"'() \\t\\n]|(%20)/.test(url) || options.needQuotes) {\n    return \"\\\"\".concat(url.replace(/\"/g, '\\\\\"').replace(/\\n/g, \"\\\\n\"), \"\\\"\");\n  }\n\n  return url;\n};\n\n//# sourceURL=webpack://webpack-config/./node_modules/css-loader/dist/runtime/getUrl.js?");
 
 /***/ }),
 
@@ -116,17 +126,37 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _tasks_functionality_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./tasks-functionality.js */ \"./src/tasks-functionality.js\");\n\n\n\nconst copyTasksBluePrint = new _tasks_functionality_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"]();\n\nconst tasksContainers = document.getElementById(\"tasks-div\");\n\nconst createDynamicTasks = () => {\n  tasksContainers.innerHTML = `\n   <div class=\"entry-line title-list\">\n        <p>Today's ToDo List</p>\n        <button type=\"button\" class=\"list-btn\">\n          <i class=\"fa-solid fa-arrows-rotate\"></i>\n        </button>\n      </div>\n      <div class=\"entry-line\">\n        <form id=\"add-task-form\">\n          <input\n            class=\"input-new-task\"\n            required\n            placeholder=\"Add to your list..\"\n          >\n          <button type='submit' class='list-btn add-task-btn'><i class='fa-solid fa-plus'></i></button>\n        </form>\n      </div>`;\n\n  if (copyTasksBluePrint.tasksArr.length !== 0) {\n    tasksContainers.innerHTML += copyTasksBluePrint.tasksArr\n      .sort((a, b) => a.index - b.index)\n      .map(\n        (\n          task\n        ) => `<div class='entry-line task-item-line'><div class='inside-list-container'><input class='task-status' data-id='${\n          task.index\n        }' type='checkbox' ${\n          task.completed ? \"checked\" : \"\"\n        }><p class='task-description' id=\"desc${\n          task.index\n        }\" contenteditable='true' data-tid='${task.index}'>${\n          task.description\n        }</p>\n          </div>\n          <button type='button' data-taskid='${task.index}' id='delete${\n          task.index\n        }' class='list-btn remove-btn'><i class='fa-solid fa-trash-can'></i></button>\n          </div>`\n      )\n      .join(\"\");\n    tasksContainers.innerHTML +=\n      '<div class=\"entry-line clear-task-line\"><button id=\"remove-completed-btn\" type=\"button\">Clear all completed</button></div>';\n\n    const taskDescriptions = document.querySelectorAll(\".task-description\");\n    const deleteBtns = document.querySelectorAll(\".remove-btn\");\n\n    deleteBtns.forEach((btn) => {\n      btn.addEventListener(\"click\", () => {\n        copyTasksBluePrint.remove(btn.dataset.taskid);\n        createDynamicTasks();\n      });\n    });\n\n    const taskStatusesInfo = document.querySelectorAll(\".task-status\");\n\n    taskStatusesInfo.forEach((status) => {\n      status.addEventListener(\"change\", () => {\n        copyTasksBluePrint.changeStatus(status.dataset.id, status.checked);\n        taskDescriptions.forEach((desc) => {\n          if (\n            parseInt(desc.dataset.tid, 10) === parseInt(status.dataset.id, 10)\n          ) {\n            desc.classList.add(\"task-line-through\");\n            desc.style = \"color: red;\";\n          }\n        });\n        createDynamicTasks();\n      });\n    });\n\n    const deleteCompletedBtn = document.getElementById(\"remove-completed-btn\");\n\n    deleteCompletedBtn.addEventListener(\"click\", () => {\n      copyTasksBluePrint.removeCompletedTasks();\n      createDynamicTasks();\n    });\n\n    taskDescriptions.forEach((taskObjItem) => {\n      taskObjItem.addEventListener(\"keyup\", () => {\n        copyTasksBluePrint.update(\n          taskObjItem.dataset.tid,\n          taskObjItem.textContent\n        );\n      });\n      taskObjItem.addEventListener(\"focus\", () => {\n        taskObjItem.parentElement.parentElement.style =\n          \"background-color: rgb(255 234 99)\";\n      });\n      taskObjItem.addEventListener(\"blur\", () => {\n        taskObjItem.parentElement.parentElement.style =\n          \"background-color: #fff\";\n      });\n    });\n  }\n\n  const submitTaskForm = document.getElementById(\"add-task-form\");\n  const newTask = document.querySelector(\".input-new-task\");\n\n  submitTaskForm.addEventListener(\"submit\", (event) => {\n    event.preventDefault();\n    const upcomingtask = {\n      description: newTask.value,\n      completed: false,\n      index: copyTasksBluePrint.funcSize() + 1,\n    };\n    copyTasksBluePrint.add(upcomingtask);\n    newTask.value = \"\";\n    createDynamicTasks();\n  });\n};\n\nwindow.onload = createDynamicTasks();\n\n\n//# sourceURL=webpack://webpack-config/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _modules_API_links_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/API-links.js */ \"./src/modules/API-links.js\");\n/* harmony import */ var _modules_get_post_data_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/get-post-data.js */ \"./src/modules/get-post-data.js\");\n\n\n\n\nconst containerDynamicCards = document.getElementById(\"addDynamicCards\");\n\nconst addFirstInterfaceCard = (image, titleCard, indexCard) => {\n  const card = document.createElement(\"div\");\n  card.classList.add(\"cardContainer\");\n  card.innerHTML = `\n  <div class=\"imgCardcontainer\">\n  <img src=\"${image}\" add=\"Image provided by Nasa's Api\">\n  </div>\n  <div class=\"title\">\n  <h3>${titleCard}</h3>\n  <a href=\"#\" id=\"${indexCard}star\" class=\"like\"><i class=\"fas fa-heart\"></a>\n  </div>\n  <small class=\"small-class\"></small>\n  <input type=\"button\" value=\"Comments\" id=\"${indexCard}\" class=\"comment\">\n\n  `;\n  containerDynamicCards.appendChild(card);\n};\n\nfunction displayImage() {\n  (0,_modules_get_post_data_js__WEBPACK_IMPORTED_MODULE_2__.getData)(_modules_API_links_js__WEBPACK_IMPORTED_MODULE_1__.getNasaApi).then((data) => {\n    containerDynamicCards.innerHTML = \"\";\n    data.forEach((card) => addFirstInterfaceCard(card.hdurl, card.title));\n  });\n}\n\ndisplayImage();\n\n\n//# sourceURL=webpack://webpack-config/./src/index.js?");
 
 /***/ }),
 
-/***/ "./src/tasks-functionality.js":
-/*!************************************!*\
-  !*** ./src/tasks-functionality.js ***!
-  \************************************/
+/***/ "./src/modules/API-links.js":
+/*!**********************************!*\
+  !*** ./src/modules/API-links.js ***!
+  \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ TasksBluePrint)\n/* harmony export */ });\nclass TasksBluePrint {\n  constructor() {\n    this.tasksArr = JSON.parse(localStorage.getItem('tasks')) || [];\n  }\n\n  add(task) {\n    this.tasksArr.push(task);\n    localStorage.setItem('tasks', JSON.stringify(this.tasksArr));\n  }\n\n  remove(id) {\n    this.tasksArr.splice(id - 1, 1);\n    this.tasksArr.forEach((task, index) => {\n      task.index = index + 1;\n    });\n    localStorage.setItem('tasks', JSON.stringify(this.tasksArr));\n  }\n\n  update(id, description) {\n    this.tasksArr.forEach((item, arrIndex) => {\n      if (item.index === parseInt(id, 10)) {\n        this.tasksArr[arrIndex].description = description;\n      }\n    });\n    localStorage.setItem('tasks', JSON.stringify(this.tasksArr));\n  }\n\n  changeStatus(id, status) {\n    this.tasksArr.forEach((item, arrIndex) => {\n      if (item.index === parseInt(id, 10)) {\n        this.tasksArr[arrIndex].completed = status;\n      }\n    });\n    localStorage.setItem('tasks', JSON.stringify(this.tasksArr));\n  }\n\n  funcSize() {\n    return this.tasksArr.length;\n  }\n\n  removeCompletedTasks() {\n    this.tasksArr = this.tasksArr.filter((task) => !task.completed);\n    this.tasksArr.forEach((task, index) => {\n      task.index = index + 1;\n    });\n    localStorage.setItem('tasks', JSON.stringify(this.tasksArr));\n  }\n}\n\n\n//# sourceURL=webpack://webpack-config/./src/tasks-functionality.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"getDataDateImage\": () => (/* binding */ getDataDateImage),\n/* harmony export */   \"getNasaApi\": () => (/* binding */ getNasaApi)\n/* harmony export */ });\nconst getNasaApi =\n  \"https://api.nasa.gov/planetary/apod?api_key=yE5XwF3YBRu6RaMb2K328lXJabWCog5rzjaIR76N&start_date=2022-04-10&end_date=2022-04-18\";\n\nconst randomDatesForPopupImgs = [\n  \"2022-04-10\",\n  \"2022-04-11\",\n  \"2022-04-12\",\n  \"2022-04-13\",\n  \"2022-04-14\",\n  \"2022-04-15\",\n  \"2022-04-16\",\n  \"2022-04-17\",\n  \"2022-04-18\",\n];\n\nconst getDataDateImage = (num) =>\n  `https://api.nasa.gov/planetary/apod?api_key=yE5XwF3YBRu6RaMb2K328lXJabWCog5rzjaIR76N&date=${randomDatesForPopupImgs[num]}`;\n\n\n\n\n//# sourceURL=webpack://webpack-config/./src/modules/API-links.js?");
+
+/***/ }),
+
+/***/ "./src/modules/get-post-data.js":
+/*!**************************************!*\
+  !*** ./src/modules/get-post-data.js ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"getData\": () => (/* binding */ getData),\n/* harmony export */   \"postData\": () => (/* binding */ postData)\n/* harmony export */ });\nconst getData = async (urlApi) => {\n  const responseData = await fetch(urlApi);\n  return responseData.json();\n};\n\nconst postData = async (urlApi, data) => {\n  const responseData = await fetch(urlApi, {\n    method: \"POST\",\n    headers: {\n      \"Content-Type\": \"application/json\",\n    },\n    body: JSON.stringify(data),\n  });\n  return responseData;\n};\n\n\n\n\n//# sourceURL=webpack://webpack-config/./src/modules/get-post-data.js?");
+
+/***/ }),
+
+/***/ "./src/images/47879.jpg":
+/*!******************************!*\
+  !*** ./src/images/47879.jpg ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"8bd58a026ec2c5e8a87f.jpg\";\n\n//# sourceURL=webpack://webpack-config/./src/images/47879.jpg?");
 
 /***/ })
 
@@ -156,6 +186,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
+/******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
@@ -181,6 +214,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -195,6 +240,52 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"main": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		// no on chunks loaded
+/******/ 		
+/******/ 		// no jsonp function
 /******/ 	})();
 /******/ 	
 /************************************************************************/

@@ -1,1 +1,151 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap");
+
+:root {
+  --General-width: 90%;
+  --transition: all 0.2s linear;
+  --scale: scale(1.2);
+  --card-scale: scale(1.05);
+  --pop-600: 600;
+}
+
+* {
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url(/src/images/47879.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  width: 100%;
+  padding: 15px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5212c9;
+}
+
+.header-container {
+  width: var(--General-width);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.imgCardcontainer {
+  min-height: 318px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  overflow: hidden;
+}
+
+.imgCardcontainer img {
+  width: 148%;
+  height: 348px;
+  margin-bottom: 7%;
+  transition: var(--transition);
+}
+
+#addDynamicCards {
+  width: var(--General-width);
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardContainer {
+  width: 30%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5% 0;
+  padding: 18px 18px;
+  background-color: rgb(16, 16, 16, 0.5);
+  border-radius: 10px;
+  transition: var(--transition);
+  position: relative;
+}
+
+.cardContainer .title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  margin: 10% 0;
+  color: white;
+}
+
+.title h2 {
+  margin-right: 7px;
+}
+
+.title h3 {
+  margin-right: 7px;
+}
+
+.cardContainer:hover {
+  transform: var(--card-scale);
+}
+
+.logo img {
+  width: 80px;
+  transition: var(--transition);
+}
+
+.imgCardcontainer img:hover {
+  transform: var(--scale);
+}
+
+.logo img:hover {
+  transform: var(--scale);
+}
+
+nav {
+  width: 50%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link {
+  transition: var(--transition);
+}
+
+.nav-link:hover {
+  transform: var(--scale);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: var(--pop-600);
+}
+
+footer {
+  background-color: #5212c9;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  position: absolute;
+}
+
+#light-house-avoid-error {
+  display: none;
+}
