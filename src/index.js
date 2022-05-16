@@ -1,36 +1,32 @@
 import './style.css';
-
-const getNasaApi = 'No neccesary yet';
+import { getNasaApi } from './modules/API-links.js';
+import { getData } from './modules/get-post-data.js';
 
 const containerDynamicCards = document.getElementById('addDynamicCards');
-
-const getData = async (urlApi) => {
-  const responseData = await fetch(urlApi);
-  return responseData.json();
-};
 
 const addFirstInterfaceCard = (image, titleCard, indexCard) => {
   const card = document.createElement('div');
   card.classList.add('cardContainer');
   card.innerHTML = `
-        <div class="imgCardcontainer">
-          <img src="${image}" alt="Image provided by Nasa's Api">
-        </div>
-        <div class="title">
-          <h3>${titleCard}</h3>
-          <a href="#" id="${indexCard}star" class="like"><i class="fas fa-heart"></i></a>
-        </div>
-        <small class='small-class'>2 likes</small>
-        <input type="button" value="Comments" id="${indexCard}" class="comment">
-        `;
+  <div class="imgCardcontainer">
+  <img src="${image}" add="Image provided by Nasa's Api">
+  </div>
+  <div class="title">
+  <h3>${titleCard}</h3>
+  <a href="#" id="${indexCard}star" class="like"><i class="fas fa-heart"></a>
+  </div>
+  <small class="small-class"></small>
+  <input type="button" value="Comments" id="${indexCard}" class="comment">
+
+  `;
   containerDynamicCards.appendChild(card);
 };
 
-const displayImage = () => {
+function displayImage() {
   getData(getNasaApi).then((data) => {
     containerDynamicCards.innerHTML = '';
-    data.forEach((elem) => addFirstInterfaceCard(elem.hdurl, elem.title));
+    data.forEach((card) => addFirstInterfaceCard(card.hdurl, card.title));
   });
-};
+}
 
 displayImage();
