@@ -52,6 +52,40 @@ header {
   transform: var(--scale);
 }
 
+nav {
+  width: 50%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link {
+  transition: var(--transition);
+}
+
+.nav-link:hover {
+  transform: var(--scale);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: var(--pop-600);
+}
+
+footer {
+  bottom: 0;
+  background-color: #5212c9;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  position: absolute;
+}
+
 #light-house-avoid-error {
   display: none;
 }
