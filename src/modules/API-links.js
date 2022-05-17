@@ -16,4 +16,8 @@ const getDataDateImage = (num) => `https://api.nasa.gov/planetary/apod?api_key=y
 
 const likeLink = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/rS93TYMaWFRcDHR1Rs9u/likes';
 
-export { getNasaApi, getDataDateImage, likeLink };
+const commentLink = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/rS93TYMaWFRcDHR1Rs9u/comments';
+
+export {
+  getNasaApi, getDataDateImage, likeLink, commentLink,
+};

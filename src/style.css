@@ -150,3 +150,91 @@ footer {
 #light-house-avoid-error {
   display: none;
 }
+
+.bigPopup h2,
+.description {
+  color: white;
+  padding: 32px;
+  text-align: center;
+}
+
+.popupWin {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  z-index: 40;
+  overflow-y: scroll;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.bigPopup {
+  position: relative;
+  width: 70%;
+  border: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(20, 17, 17, 1);
+  margin: 24px auto;
+  row-gap: 15px;
+  border-radius: 10px;
+}
+
+.popup-class-image {
+  width: 100%;
+  padding: 20px;
+  border: 2px solid yellow;
+}
+
+.bigPopup span {
+  align-self: flex-end;
+  padding: 20px;
+}
+
+#closePopup {
+  color: white;
+  font-weight: var(--pop-600);
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.bigPopup form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  margin: 18px auto;
+  height: 300px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 20px;
+}
+
+::placeholder {
+  padding: 15px;
+}
+
+.bigPopup p {
+  width: 80%;
+  margin: 0 auto;
+  line-height: 20px;
+  font-weight: 500;
+  color: white;
+}
+
+#ul-comment-dynamic-link li {
+  color: white;
+  padding: 5px;
+}

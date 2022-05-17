@@ -20,14 +20,13 @@ const addFirstInterfaceCard = (image, titleCard, indexCard) => {
   </div>
   <small class="small-class"></small>
   <input type="button" value="Comments" id="${indexCard}" class="comment">
-
   `;
   containerDynamicCards.appendChild(card);
 };
 
 const displayImage = (idImg) => {
   getData(getDataDateImage(idImg))
-    .then((data) => displayWindowPopup(data.hdurl, data.title, data.infoDescript, idImg))
+    .then((data) => displayWindowPopup(data.hdurl, data.title, data.explanation, idImg))
     .then(() => {
       const closePopupBtn = document.getElementById('closePopup');
       closePopupBtn.addEventListener('click', () => {
@@ -80,17 +79,16 @@ showAmountOfLikes();
 rawFunclike();
 
 containerDynamicCards.addEventListener('click', (e) => {
-  // THIS WILL DISPLAY THE CORRESPONDING LIKES
-  // if (e.target.classList.contains('fa-heart')) {
-  //   e.preventDefault();
-  //   const likeCounter = parseInt(
-  //     e.target.parentElement.parentElement.nextElementSibling.textContent,
-  //     10,
-  //   );
-  //   const likes = likeCounter + 1;
-  //   rawFunclike(e.target.parentElement.id, likes);
-  // }
   if (e.target.classList.contains('comment')) {
     displayImage(parseInt(e.target.id, 10));
   }
+  // if (e.target.id === 'popupComment') {
+  //   e.preventDefault();
+  //   const idComment = e.target.parentElement.id.match(/[0-9]/g);
+  //   const userName = document.getElementById('userName');
+  //   const commentDom = document.getElementById('comment-box-id');
+  // postComment(idComment, userName.value, commentDom.value);
+  // userName.value = '';
+  // commentDom.value = '';
+  // }
 });
