@@ -6,11 +6,6 @@ import {
   displayWindowPopup,
   closeWindowPopup,
 } from './modules/pop-up.js';
-import {
-  commentStructure,
-  showComment,
-  postComment,
-} from "./modules/funcComments.js";
 
 const addFirstInterfaceCard = (image, titleCard, indexCard) => {
   const card = document.createElement('div');
@@ -84,26 +79,16 @@ showAmountOfLikes();
 rawFunclike();
 
 containerDynamicCards.addEventListener('click', (e) => {
-  if (e.target.classList.contains('fa-heart')) {
-    e.preventDefault();
-    const likeCounter = parseInt(
-      e.target.parentElement.parentElement.nextElementSibling.textContent,
-      10,
-    );
-    const likes = likeCounter + 1;
-    rawFunclike(e.target.parentElement.id, likes);
-  }
   if (e.target.classList.contains('comment')) {
     displayImage(parseInt(e.target.id, 10));
   }
-  if (e.target.id === 'popupComment') {
-    e.preventDefault();
-    const idComment = e.target.parentElement.id.match(/[0-9]/g);
-    const userName = document.getElementById('userName');
-    const commentDom = document.getElementById('comment-box-id');
-    postComment(idComment, userName.value, commentDom.value);
-    userName.value = '';
-    commentDom.value = '';
-  }
+  // if (e.target.id === 'popupComment') {
+  //   e.preventDefault();
+  //   const idComment = e.target.parentElement.id.match(/[0-9]/g);
+  //   const userName = document.getElementById('userName');
+  //   const commentDom = document.getElementById('comment-box-id');
+  // postComment(idComment, userName.value, commentDom.value);
+  // userName.value = '';
+  // commentDom.value = '';
+  // }
 });
-
