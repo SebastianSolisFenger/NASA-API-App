@@ -1,6 +1,16 @@
 import { getData, postData } from './get-post-data.js';
 import { commentLink } from './API-links.js';
 
+function countingElementsFunc(elem) {
+  return elem.childElementCount;
+}
+
+function countingItems() {
+  const item = document.querySelector('#item-count');
+  const DynamicSection = document.querySelector('#addDynamicCards');
+  item.innerHTML = `Black-Hole ${countingElementsFunc(DynamicSection)}`;
+}
+
 const commentStructure = (userName, textCommentStr) => {
   const ulDynamicCont = document.querySelector('#ul-comment-dynamic-link');
   const LIST = document.createElement('li');
@@ -30,4 +40,4 @@ const postComment = (idComment, userName, commentStr) => {
     .catch(() => commentStructure('This image has', 'no comments yet'));
 };
 
-export { showComment, postComment };
+export { showComment, postComment, countingItems };
