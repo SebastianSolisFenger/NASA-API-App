@@ -1,9 +1,7 @@
 import { getData, postData } from './get-post-data.js';
 import { commentLink } from './API-links.js';
 
-function countingElementsFunc(elem) {
-  return elem.childElementCount;
-}
+const countingElementsFunc = (elem) => elem.childElementCount;
 
 function countingItems() {
   const item = document.querySelector('#item-count');
@@ -40,4 +38,6 @@ const postComment = (idComment, userName, commentStr) => {
     .catch(() => commentStructure('This image has', 'no comments yet'));
 };
 
-export { showComment, postComment, countingItems };
+export {
+  showComment, postComment, countingItems, countingElementsFunc,
+};
