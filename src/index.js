@@ -6,6 +6,7 @@ import {
   displayWindowPopup,
   closeWindowPopup,
 } from './modules/pop-up.js';
+import { postComment, showComment } from './modules/funcComments.js';
 
 const addFirstInterfaceCard = (image, titleCard, indexCard) => {
   const card = document.createElement('div');
@@ -28,6 +29,7 @@ const displayImage = (idImg) => {
   getData(getDataDateImage(idImg))
     .then((data) => displayWindowPopup(data.hdurl, data.title, data.explanation, idImg))
     .then(() => {
+      showComment(idImg);
       const closePopupBtn = document.getElementById('closePopup');
       closePopupBtn.addEventListener('click', () => {
         closeWindowPopup(closePopupBtn);
@@ -82,13 +84,13 @@ containerDynamicCards.addEventListener('click', (e) => {
   if (e.target.classList.contains('comment')) {
     displayImage(parseInt(e.target.id, 10));
   }
-  // if (e.target.id === 'popupComment') {
-  //   e.preventDefault();
-  //   const idComment = e.target.parentElement.id.match(/[0-9]/g);
-  //   const userName = document.getElementById('userName');
-  //   const commentDom = document.getElementById('comment-box-id');
-  // postComment(idComment, userName.value, commentDom.value);
-  // userName.value = '';
-  // commentDom.value = '';
-  // }
+  if (e.target.id === 'popupComment') {
+    e.preventDefault();
+    const idComment = e.target.parentElement.id.match(/[0-9]/g);
+    const userName = document.getElementById('userName');
+    const commentDom = document.getElementById('comment-box-id');
+    postComment(idComment, userName.value, commentDom.value);
+    userName.value = '';
+    commentDom.value = '';
+  }
 });
