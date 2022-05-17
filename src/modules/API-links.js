@@ -14,4 +14,6 @@ const randomDatesForPopupImgs = [
 
 const getDataDateImage = (num) => `https://api.nasa.gov/planetary/apod?api_key=yE5XwF3YBRu6RaMb2K328lXJabWCog5rzjaIR76N&date=${randomDatesForPopupImgs[num]}`;
 
-export { getNasaApi, getDataDateImage };
+const likeLink = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/rS93TYMaWFRcDHR1Rs9u/likes';
+
+export { getNasaApi, getDataDateImage, likeLink };
