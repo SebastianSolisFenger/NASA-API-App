@@ -81,6 +81,16 @@ showAmountOfLikes();
 rawFunclike();
 
 containerDynamicCards.addEventListener('click', (e) => {
+  if (e.target.classList.contains('fa-heart')) {
+    e.preventDefault();
+    const likeCounter = parseInt(
+      e.target.parentElement.parentElement.nextElementSibling.textContent,
+      10,
+    );
+    const likes = likeCounter + 1;
+    rawFunclike(e.target.parentElement.id, likes);
+  }
+
   if (e.target.classList.contains('comment')) {
     displayImage(parseInt(e.target.id, 10));
   }
