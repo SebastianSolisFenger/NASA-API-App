@@ -6,7 +6,11 @@ import {
   displayWindowPopup,
   closeWindowPopup,
 } from './modules/pop-up.js';
-import { postComment, showComment } from './modules/funcComments.js';
+import {
+  postComment,
+  showComment,
+  countingItems,
+} from './modules/funcComments.js';
 
 const addFirstInterfaceCard = (image, titleCard, indexCard) => {
   const card = document.createElement('div');
@@ -62,6 +66,7 @@ const showAmountOfLikes = () => {
     .then((data) => data.forEach((card, ind) => addFirstInterfaceCard(card.hdurl, card.title, ind)))
     .then(() => {
       showFuncLikes();
+      countingItems();
     })
     .catch((error) => console.log(error));
 };
