@@ -8,7 +8,10 @@
 
 - Major languages: HTML, CSS, JavaScript
 - Frameworks: none
-- Technologies used: Webpack, NASA's API
+## Technologies used:
+- Webpack
+- NASA API [portal](https://api.nasa.gov/).
+- Involvement API [portal](https://www.notion.so/Involvement-API-869e60b5ad104603aa6db59e08150270).
 
 ## Design 
 
