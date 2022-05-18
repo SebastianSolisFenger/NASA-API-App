@@ -12,7 +12,7 @@
 
 ## LIVE DEMO
 
-- Coming Soon
+- https://sebastiansolisfenger.github.io/Capstone-API-App/dist/
 
 ## Authors
 
