@@ -2,7 +2,7 @@
 
 ## JavaScript capstone project: API-based webapp
 
-> This project is a Single Page Web App that posts and gets data from different APIs to list photos taken by NASA. This app has a functionality to like and comment each listed photo.
+> This project is a Web App that posts and gets data from different APIs to list photos taken by NASA. This app has a functionality to like and comment each listed photo.
 
 ## Built With
 
