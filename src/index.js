@@ -1,4 +1,7 @@
 import './style.css';
+import spaceman from './images/6188270.png';
+import bgGalaxy from './images/47879.jpg';
+import userError from './modules/validation.js';
 import { getNasaApi, getDataDateImage, likeLink } from './modules/API-links.js';
 import { getData, postData } from './modules/get-post-data.js';
 import {
@@ -11,6 +14,11 @@ import {
   showComment,
   countingItems,
 } from './modules/funcComments.js';
+
+const logo = document.getElementById('headlogo');
+logo.src = spaceman;
+const galaxy = document.getElementById('body');
+galaxy.style = `background: url(${bgGalaxy})`;
 
 const addFirstInterfaceCard = (image, titleCard, indexCard) => {
   const card = document.createElement('div');
@@ -99,13 +107,20 @@ containerDynamicCards.addEventListener('click', (e) => {
   if (e.target.classList.contains('comment')) {
     displayImage(parseInt(e.target.id, 10));
   }
+
   if (e.target.id === 'popupComment') {
     e.preventDefault();
     const idComment = e.target.parentElement.id.match(/[0-9]/g);
     const userName = document.getElementById('userName');
     const commentDom = document.getElementById('comment-box-id');
-    postComment(idComment, userName.value, commentDom.value);
-    userName.value = '';
-    commentDom.value = '';
+    if (userName.value === '') {
+      userError();
+    } else {
+      postComment(idComment, userName.value, commentDom.value);
+      userName.value = '';
+      commentDom.value = '';
+    }
   }
 });
+
+console.log(containerDynamicCards);
