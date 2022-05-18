@@ -238,3 +238,16 @@ textarea {
   color: white;
   padding: 5px;
 }
+
+#item-count {
+  color: #fff;
+  font-weight: var(--pop-600);
+}
+
+.small-class {
+  color: #fff;
+}
+
+#comentDynamicList li {
+  color: #fff;
+}

@@ -99,6 +99,7 @@ containerDynamicCards.addEventListener('click', (e) => {
   if (e.target.classList.contains('comment')) {
     displayImage(parseInt(e.target.id, 10));
   }
+
   if (e.target.id === 'popupComment') {
     e.preventDefault();
     const idComment = e.target.parentElement.id.match(/[0-9]/g);
