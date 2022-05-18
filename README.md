@@ -1,37 +1,35 @@
-# Todo list app
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-> A Javascript to do list web app that keep track of actions or todos.
+## JavaScript capstone project: API-based webapp
+
+> This project is a Single Page Web App that posts and gets data from different APIs to list photos taken by NASA. This app has a functionality to like and comment each listed photo.
 
 ## Built With
 
-- Major languages: HTML & CSS
+- Major languages: HTML, CSS, JavaScript
 - Frameworks: none
-- Technologies used: Webpack
+- Technologies used: Webpack, NASA's API
 
 ## LIVE DEMO
 
-https://sebastiansolisfenger.github.io/To-do-List-Pro/dist/
+- Coming Soon
 
-![image](https://user-images.githubusercontent.com/88522494/166743696-1af83251-82cf-4047-8bf8-59cd56ed4317.png)
-
-## Author
+## Authors
 
 👤 **Sebastian Solis**
 
 - GitHub: [@sebastianDanielSolisFenger](https://github.com/SebastianSolisFenger)
 
-👤 **Luis pomare**
+👤 **Alex Puente**
 
-- GitHub: [@luis-pomare](https://github.com/luis-pomare)
-- Twitter: [@LuisPomare1](https://twitter.com/LuisPomare1)
-- LinkedIn: [luis-pomare-388116225](https://www.linkedin.com/in/luis-pomare-388116225/)
+- GitHub: [@alexpuente0](https://github.com/alexpuente0)
 
 # Install Instruction
 
 1. Open your terminal and `cd` to a proper location.
-2. Clone the Repo on you computer using `git clone git@github.com:SebastianSolisFenger/To-do-List-Pro.git`
+2. Clone the Repo on you computer using `git clone git@github.com:SebastianSolisFenger/Capstone-API-App.git`
 3. Make sure you have JavaScript installed; use `js -v` .
-4. Cd to the project directory`cd To-do-List-Pro` .
+4. Cd to the project directory`cd Capstone-API-App` .
 5. Use `node -v` to check if you have node instaled
 6. Install the dependencies in the local node_modules folder with `npm install`
 7. Then `npm start`
@@ -54,6 +52,7 @@ Give a ⭐️ if you like this project!
 
 - Hat tip to anyone whose code was used
 - Inspiration
+- NASA
 - etc
 
 ## 📝 License
