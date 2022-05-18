@@ -10,6 +10,10 @@
 - Frameworks: none
 - Technologies used: Webpack, NASA's API
 
+## Design 
+
+![image](https://user-images.githubusercontent.com/88522494/169161485-c77b72a8-55b8-435a-a860-6f452c4b77b2.png)
+
 ## LIVE DEMO
 
 - https://sebastiansolisfenger.github.io/Capstone-API-App/dist/
