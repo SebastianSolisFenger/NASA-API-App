@@ -1,8 +1,8 @@
-const containerDynamicCards = document.getElementById("addDynamicCards");
+const containerDynamicCards = document.getElementById('addDynamicCards');
 
 const displayWindowPopup = (image, title, infoDescrip, windowsId) => {
-  const popupContainer = document.createElement("div");
-  popupContainer.classList.add("popupWin");
+  const popupContainer = document.createElement('div');
+  popupContainer.classList.add('popupWin');
   popupContainer.innerHTML = `
   <div class="bigPopup">
     <span><i class="fas fa-times" id="closePopup"></i></span>
