@@ -1,8 +1,8 @@
-const containerDynamicCards = document.getElementById('addDynamicCards');
+const containerDynamicCards = document.getElementById("addDynamicCards");
 
 const displayWindowPopup = (image, title, infoDescrip, windowsId) => {
-  const popupContainer = document.createElement('div');
-  popupContainer.classList.add('popupWin');
+  const popupContainer = document.createElement("div");
+  popupContainer.classList.add("popupWin");
   popupContainer.innerHTML = `
   <div class="bigPopup">
     <span><i class="fas fa-times" id="closePopup"></i></span>
@@ -16,8 +16,8 @@ const displayWindowPopup = (image, title, infoDescrip, windowsId) => {
      <ul id="comentDynamicList"></ul>
     </div>
     <form id="${windowsId}form" action="post">
-      <input type="text" placeholder="Enter your Name" id="userName">
-      <textarea name="text" id="comment-box-id" cols="40" rows="15" placeholder="...and your comment."></textarea>
+      <input type="text" placeholder="Enter your Name" id="userName" required  minlength="4">
+      <textarea name="text" id="comment-box-id" cols="40" rows="15" placeholder="...and your comment." required  minlength="4"></textarea>
       <input type="button" value="Comment" id="popupComment">
     </form>
   </div>

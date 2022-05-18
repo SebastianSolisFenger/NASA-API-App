@@ -92,6 +92,7 @@ header {
 
 .cardContainer:hover {
   transform: var(--card-scale);
+  border: 2px solid yellow;
 }
 
 .logo img {
@@ -101,6 +102,7 @@ header {
 
 .imgCardcontainer img:hover {
   transform: var(--scale);
+  border: 2px solid yellow;
 }
 
 .logo img:hover {
@@ -198,14 +200,11 @@ footer {
   font-size: 25px;
 }
 
-.bigPopup form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 40%;
-  margin: 18px auto;
-  height: 300px;
+#userName,
+textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 20px;
 }
 
 input[type="text"],
@@ -213,6 +212,10 @@ textarea {
   width: 100%;
   margin: 10px 0;
   padding: 20px;
+}
+
+textarea::-webkit-scrollbar {
+  display: none;
 }
 
 ::placeholder {
@@ -247,11 +250,17 @@ textarea {
   bottom: 60px;
 }
 
+#comentDynamicList {
+  height: 70px;
+  overflow-y: auto;
+}
+
 #comentDynamicList li {
   color: #fff;
 }
 
-.comment {
+.comment,
+#popupComment {
   position: absolute;
   bottom: 12px;
   width: 60%;
@@ -266,8 +275,113 @@ textarea {
   border-radius: 4px;
 }
 
-.comment:hover {
+.comment:hover,
+#popupComment:hover {
   transform: var(--scale);
   color: white;
   background-color: rgba(0, 0, 0, 0.75);
+  border: 2px solid yellow;
+}
+
+.bigPopup form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  margin: 18px auto;
+  height: 300px;
+}
+
+#comment-box-id {
+  height: 500px;
+  margin-bottom: 120px;
+}
+
+.fa-heart:hover {
+  transform: var(--scale);
+  color: red;
+}
+
+#ul-header {
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 900px) {
+  .cardContainer {
+    width: 44%;
+  }
+
+  .header-container {
+    flex-direction: column;
+  }
+
+  #ul-header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #ul-header .nav-link a {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .cardContainer {
+    width: 100%;
+  }
+
+  #ul-header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.cardContainer::before,
+.cardContainer::after,
+.bigPopup::before,
+.bigPopup::after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  border-radius: 10px;
+  background: linear-gradient(
+    45deg,
+    #382fe2,
+    #0404bf,
+    #5212c9,
+    #4d0bc0,
+    #740808,
+    #8d0b57,
+    #00f
+  );
+  background-size: 200%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: steam 15s linear infinite;
+}
+
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 300% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.cardContainer::after,
+.bigPopup::after {
+  filter: blur(50px);
+  border: 2px solid yellow;
 }
