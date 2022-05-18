@@ -22,7 +22,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #5212c9;
+  background-color: #320187;
 }
 
 .header-container {
@@ -125,6 +125,7 @@ nav ul {
 
 .nav-link:hover {
   transform: var(--scale);
+  text-decoration: underline;
 }
 
 a {
@@ -134,12 +135,14 @@ a {
 }
 
 footer {
-  background-color: #5212c9;
+  background-color: #320187;
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   color: white;
   position: absolute;
+  height: 50px;
 }
 
 #light-house-avoid-error {
@@ -308,6 +311,12 @@ textarea::-webkit-scrollbar {
   gap: 10px;
 }
 
+@media (min-width: 1200px) {
+  .small-class {
+    bottom: 50px;
+  }
+}
+
 @media (max-width: 900px) {
   .cardContainer {
     width: 44%;
@@ -326,6 +335,10 @@ textarea::-webkit-scrollbar {
   #ul-header .nav-link a {
     width: 100%;
   }
+
+  .small-class {
+    bottom: 50px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -337,6 +350,10 @@ textarea::-webkit-scrollbar {
     display: flex;
     flex-direction: column;
     gap: 20px;
+  }
+
+  .small-class {
+    bottom: 50px;
   }
 }
 
