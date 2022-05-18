@@ -7,7 +7,7 @@
 ## Built With
 
 - Major languages: HTML, CSS, JavaScript
-- Frameworks: none
+
 ## Technologies used:
 - Webpack
 - NASA API [link](https://api.nasa.gov/).
