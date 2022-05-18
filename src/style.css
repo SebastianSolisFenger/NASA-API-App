@@ -322,8 +322,29 @@ textarea::-webkit-scrollbar {
     width: 44%;
   }
 
+  .bigPopup p {
+    overflow-y: auto;
+    height: 200px;
+  }
+
   .header-container {
     flex-direction: column;
+  }
+
+  .commentStyle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #comentDynamicList {
+    width: 70%;
+  }
+
+  #userName,
+  textarea {
+    width: 180%;
   }
 
   #ul-header {

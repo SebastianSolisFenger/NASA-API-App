@@ -11,7 +11,7 @@ const displayWindowPopup = (image, title, infoDescrip, windowsId) => {
     </div>
     <h2>${title}</h2>
     <p class="description">${infoDescrip}</p>
-    <div>
+    <div class="commentStyle">
      <h2 class="comments">Comments</h2>
      <ul id="comentDynamicList"></ul>
     </div>
