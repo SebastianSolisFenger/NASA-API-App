@@ -16,13 +16,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-body {
-  background-image: url(/src/images/47879.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
 header {
   width: 100%;
   padding: 15px 12px;
