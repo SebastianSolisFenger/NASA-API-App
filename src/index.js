@@ -110,3 +110,5 @@ containerDynamicCards.addEventListener('click', (e) => {
     commentDom.value = '';
   }
 });
+
+console.log(containerDynamicCards);

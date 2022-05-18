@@ -245,9 +245,36 @@ textarea {
 }
 
 .small-class {
-  color: #fff;
+  align-self: flex-end;
+  margin-bottom: 7%;
+  color: white;
+  font-weight: var(--pop-600);
+  position: absolute;
+  right: 10px;
+  bottom: 60px;
 }
 
 #comentDynamicList li {
   color: #fff;
+}
+
+.comment {
+  position: absolute;
+  bottom: 12px;
+  width: 60%;
+  margin-bottom: 5%;
+  padding: 10px 15px;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.75);
+  transition: var(--transition);
+  font-weight: var(--pop-600);
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.comment:hover {
+  transform: var(--scale);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.75);
 }
