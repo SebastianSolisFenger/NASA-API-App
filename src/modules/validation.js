@@ -5,4 +5,8 @@ const userError = () => {
   userName.style.border = '2px solid #bd1212';
 };
 
-export default userError;
+const hideLoader = () => {
+  document.querySelector('.spinner').style.display = 'none';
+};
+
+export { userError, hideLoader };

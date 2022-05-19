@@ -1,7 +1,7 @@
 import './style.css';
 import spaceman from './images/6188270.png';
 import bgGalaxy from './images/47879.jpg';
-import userError from './modules/validation.js';
+import { userError, hideLoader } from './modules/validation.js';
 import { getNasaApi, getDataDateImage, likeLink } from './modules/API-links.js';
 import { getData, postData } from './modules/get-post-data.js';
 import {
@@ -19,6 +19,8 @@ const logo = document.getElementById('headlogo');
 logo.src = spaceman;
 const galaxy = document.getElementById('body');
 galaxy.style = `background: url(${bgGalaxy})`;
+
+setTimeout(hideLoader, 2000);
 
 const addFirstInterfaceCard = (image, titleCard, indexCard) => {
   const card = document.createElement('div');
