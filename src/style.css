@@ -571,6 +571,7 @@ textarea::-webkit-scrollbar {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    text-align: center;
   }
 
   .small-class {
