@@ -15,7 +15,7 @@
 
 ## Design 
 
-![image](https://user-images.githubusercontent.com/88522494/169161485-c77b72a8-55b8-435a-a860-6f452c4b77b2.png)
+![image](https://user-images.githubusercontent.com/88522494/169354735-c621ea2a-8c52-4675-9705-9ac276453686.png)
 
 ## LIVE DEMO
 
