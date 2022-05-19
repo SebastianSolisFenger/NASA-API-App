@@ -18,11 +18,16 @@
 
 header {
   width: 100%;
-  padding: 15px 12px;
+  padding: 5px 12px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #320187;
+  background: rgb(82, 18, 201);
+  background: linear-gradient(
+    180deg,
+    rgba(82, 18, 201, 0.6642254313834909) 12%,
+    rgba(56, 50, 152, 1) 92%
+  );
 }
 
 .header-container {
@@ -173,13 +178,18 @@ footer {
 
 .bigPopup {
   position: relative;
-  width: 70%;
+  width: 85%;
   border: 1px solid #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(20, 17, 17, 1);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.840696019618785) 0%,
+    rgba(56, 50, 152, 1) 100%
+  );
   margin: 24px auto;
   row-gap: 15px;
   border-radius: 10px;
@@ -201,6 +211,11 @@ footer {
   font-weight: var(--pop-600);
   cursor: pointer;
   font-size: 25px;
+  transition: var(--transition);
+}
+
+#closePopup:hover {
+  transform: var(--scale);
 }
 
 #userName,
@@ -359,6 +374,58 @@ textarea::-webkit-scrollbar {
 
   .small-class {
     bottom: 50px;
+  }
+
+  .bigPopup h2,
+  .description {
+    padding: 12px;
+  }
+
+  #comment-box-id {
+    margin-bottom: 86px;
+  }
+
+  .comment,
+  #popupComment {
+    width: 87%;
+  }
+
+  .comment:hover,
+  #popupComment:hover {
+    transform: scale(1.1);
+  }
+
+  .comment,
+  #popupComment {
+    margin: 10px;
+  }
+
+  .cardContainer {
+    height: 569px;
+  }
+
+  .imgCardcontainer img {
+    height: 378px;
+    margin-bottom: 80px;
+  }
+
+  .imgCardcontainer img:hover {
+    transform: scale(1.1);
+    border: none;
+  }
+
+  .title h3 {
+    margin-right: 7px;
+    position: absolute;
+    bottom: 90px;
+    width: 80%;
+  }
+
+  .fa-heart {
+    content: "\f004";
+    position: absolute;
+    right: 25px;
+    bottom: 112px;
   }
 }
 
