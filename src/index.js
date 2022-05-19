@@ -20,7 +20,7 @@ logo.src = spaceman;
 const galaxy = document.getElementById('body');
 galaxy.style = `background: url(${bgGalaxy})`;
 
-setTimeout(hideLoader, 2000)
+setTimeout(hideLoader, 2000);
 
 const addFirstInterfaceCard = (image, titleCard, indexCard) => {
   const card = document.createElement('div');

@@ -6,7 +6,7 @@ const userError = () => {
 };
 
 const hideLoader = () => {
-   document.querySelector(".spinner").style.display = "none";
-}
+  document.querySelector('.spinner').style.display = 'none';
+};
 
-export { userError, hideLoader }
+export { userError, hideLoader };
