@@ -75,6 +75,7 @@ header {
   border-radius: 10px;
   transition: var(--transition);
   position: relative;
+  box-shadow: 5px 10px;
 }
 
 .cardContainer .title {
@@ -93,6 +94,7 @@ header {
 
 .title h3 {
   margin-right: 7px;
+  width: 85%;
 }
 
 .cardContainer:hover {
@@ -196,7 +198,7 @@ footer {
 }
 
 .popup-class-image {
-  width: 100%;
+  width: 80%;
   padding: 20px;
   border: 2px solid yellow;
 }
@@ -223,6 +225,7 @@ textarea {
   width: 100%;
   margin: 10px 0;
   padding: 20px;
+  border-radius: 10px;
 }
 
 input[type="text"],
@@ -277,6 +280,18 @@ textarea::-webkit-scrollbar {
   color: #fff;
 }
 
+.fa-heart {
+  font-size: 20px;
+  transition: var(--transition);
+  position: absolute;
+  right: 18px;
+  bottom: 120px;
+}
+
+.title h3 {
+  margin-bottom: 20px;
+}
+
 .comment,
 #popupComment {
   position: absolute;
@@ -291,6 +306,11 @@ textarea::-webkit-scrollbar {
   border: none;
   cursor: pointer;
   border-radius: 4px;
+}
+
+.img-container-popup {
+  display: flex;
+  justify-content: center;
 }
 
 .comment:hover,
@@ -328,7 +348,7 @@ textarea::-webkit-scrollbar {
 
 @media (min-width: 1200px) {
   .small-class {
-    bottom: 50px;
+    bottom: 70px;
   }
 }
 
@@ -390,6 +410,14 @@ textarea::-webkit-scrollbar {
     width: 87%;
   }
 
+  #userName,
+  textarea {
+    height: 50px;
+  }
+
+  #comentDynamicList li {
+    font-size: 14px;
+  }
   .comment:hover,
   #popupComment:hover {
     transform: scale(1.1);
@@ -402,6 +430,7 @@ textarea::-webkit-scrollbar {
 
   .cardContainer {
     height: 569px;
+    box-shadow: 5px 10px;
   }
 
   .imgCardcontainer img {
@@ -426,10 +455,20 @@ textarea::-webkit-scrollbar {
     position: absolute;
     right: 25px;
     bottom: 112px;
+    font-size: 20px;
+  }
+
+  .bigPopup h2,
+  .description {
+    font-size: 22px;
+  }
+
+  .bigPopup p {
+    font-size: 14px;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 682px) {
   .cardContainer {
     width: 100%;
   }
@@ -489,4 +528,27 @@ textarea::-webkit-scrollbar {
 .bigPopup::after {
   filter: blur(50px);
   border: 2px solid yellow;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #5213a0 #fafafa36;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #fafafa33;
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #5213a0;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
 }
