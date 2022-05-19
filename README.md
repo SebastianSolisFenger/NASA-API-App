@@ -2,7 +2,7 @@
 
 ## JavaScript capstone project: API-based webapp
 
-> This project is a Web App that posts and gets data from different APIs to list photos taken by NASA. This app has a functionality to like and comment each listed photo.
+> This group project is about building our own web application based on an external API, which in this case, is NASA API portal. This website helps with discoverability of relevant Astronomy Picture of the Day. UI = User can interact with the website through the likes and comments, in which Microverse built involvement API is used.
 
 ## Built With
 
