@@ -452,7 +452,7 @@ textarea::-webkit-scrollbar {
 
 @media (min-width: 1200px) {
   .small-class {
-    bottom: 70px;
+    bottom: 55px;
   }
 }
 
