@@ -41,7 +41,10 @@ header {
 /* Spinner */
 
 .spinner {
-display: block;
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  background-color: #0f0e12d9;
 }
 
 .loader {
@@ -456,11 +459,14 @@ textarea::-webkit-scrollbar {
 @media (max-width: 900px) {
   .cardContainer {
     width: 44%;
+    height: 569px;
+    box-shadow: 5px 10px;
   }
 
   .bigPopup p {
     overflow-y: auto;
     height: 200px;
+    font-size: 14px;
   }
 
   .header-container {
@@ -500,6 +506,7 @@ textarea::-webkit-scrollbar {
   .bigPopup h2,
   .description {
     padding: 12px;
+    font-size: 22px;
   }
 
   #comment-box-id {
@@ -529,11 +536,6 @@ textarea::-webkit-scrollbar {
     margin: 10px;
   }
 
-  .cardContainer {
-    height: 569px;
-    box-shadow: 5px 10px;
-  }
-
   .imgCardcontainer img {
     height: 378px;
     margin-bottom: 80px;
@@ -557,15 +559,6 @@ textarea::-webkit-scrollbar {
     right: 25px;
     bottom: 112px;
     font-size: 20px;
-  }
-
-  .bigPopup h2,
-  .description {
-    font-size: 22px;
-  }
-
-  .bigPopup p {
-    font-size: 14px;
   }
 }
 
@@ -633,6 +626,7 @@ textarea::-webkit-scrollbar {
 
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
+
 * {
   scrollbar-width: auto;
   scrollbar-color: #5213a0 #fafafa36;
@@ -651,5 +645,5 @@ textarea::-webkit-scrollbar {
 *::-webkit-scrollbar-thumb {
   background-color: #5213a0;
   border-radius: 10px;
-  border: 3px solid #ffffff;
+  border: 3px solid #fff;
 }
