@@ -19,7 +19,7 @@
 
 ## LIVE DEMO
 
-- https://sebastiansolisfenger.github.io/Capstone-API-App/dist/
+- [https://sebastiansolisfenger.github.io/Capstone-API-App/dist/](https://sebastiansolisfenger.github.io/NASA-API-App/dist/)
 
 ## Video Presentation
 
