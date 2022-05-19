@@ -1,37 +1,46 @@
-# Todo list app
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-> A Javascript to do list web app that keep track of actions or todos.
+## JavaScript capstone project: API-based webapp
+
+> This project is a Web App that posts and gets data from different APIs to list photos taken by NASA. This app has a functionality to like and comment each listed photo.
 
 ## Built With
 
-- Major languages: HTML & CSS
-- Frameworks: none
-- Technologies used: Webpack
+- Major languages: HTML, CSS, JavaScript
+
+## Technologies used:
+- Webpack
+- NASA API [link](https://api.nasa.gov/).
+- Involvement API [link](https://www.notion.so/Involvement-API-869e60b5ad104603aa6db59e08150270).
+
+## Design 
+
+![image](https://user-images.githubusercontent.com/88522494/169161485-c77b72a8-55b8-435a-a860-6f452c4b77b2.png)
 
 ## LIVE DEMO
 
-https://sebastiansolisfenger.github.io/To-do-List-Pro/dist/
+- https://sebastiansolisfenger.github.io/Capstone-API-App/dist/
 
-![image](https://user-images.githubusercontent.com/88522494/166743696-1af83251-82cf-4047-8bf8-59cd56ed4317.png)
+## Video Presentation
 
-## Author
+- https://drive.google.com/file/d/1XMF653vTdjrB4aXitDKECEZgPHeFu6zK/view?usp=sharing
+
+## Authors
 
 👤 **Sebastian Solis**
 
 - GitHub: [@sebastianDanielSolisFenger](https://github.com/SebastianSolisFenger)
 
-👤 **Luis pomare**
+👤 **Alex Puente**
 
-- GitHub: [@luis-pomare](https://github.com/luis-pomare)
-- Twitter: [@LuisPomare1](https://twitter.com/LuisPomare1)
-- LinkedIn: [luis-pomare-388116225](https://www.linkedin.com/in/luis-pomare-388116225/)
+- GitHub: [@alexpuente0](https://github.com/alexpuente0)
 
 # Install Instruction
 
 1. Open your terminal and `cd` to a proper location.
-2. Clone the Repo on you computer using `git clone git@github.com:SebastianSolisFenger/To-do-List-Pro.git`
+2. Clone the Repo on you computer using `git clone git@github.com:SebastianSolisFenger/Capstone-API-App.git`
 3. Make sure you have JavaScript installed; use `js -v` .
-4. Cd to the project directory`cd To-do-List-Pro` .
+4. Cd to the project directory`cd Capstone-API-App` .
 5. Use `node -v` to check if you have node instaled
 6. Install the dependencies in the local node_modules folder with `npm install`
 7. Then `npm start`
@@ -52,8 +61,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
 - Inspiration
+- NASA
 - etc
 
 ## 📝 License
